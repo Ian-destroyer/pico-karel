@@ -1,0 +1,25 @@
+All of Karel's functions should be put in the main() function.
+This function is run through once, at which point the program stops.
+You can press (Z) to start the program, or restart when it ends.
+
+Karel has five base commands
+They are
+ - move(): Moves Karel forward one block.
+ - turnleft(): Turns Karel left. (°O°)
+ - dropchip( color ): Drops a chip with the specified color code. Drops a yellow chip if none is specified.
+ - takechip(): Removes a chip if there is one under Karel
+ - checkchip(): Looks at the chip under karel, and if it finds one, returns the color code.
+ 
+Karel's world has a few parameters. They are:
+ - worldwidth
+ - worldheight
+ - kx: Karel's current x position
+ - ky: Karel's current y position
+ - kh: Karel's current heading, where 0 is up and it goes clockwise from there.
+ 
+The chip color codes are as follows:
+ - -1: A blank space. Is only used when checkchip() finds no chip.
+ -  0: A yellow chip
+ -  1: A red chip
+ -  2: A black chip
+ -  3: A blue chip
